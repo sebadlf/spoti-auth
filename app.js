@@ -35,8 +35,6 @@ let data = client_id + ":" + client_secret;
 let buff = new Buffer(data);
 let encoded = buff.toString("base64");
 
-console.log(encoded);
-
 let config = {
   headers: {
     Authorization: "Basic " + encoded,
